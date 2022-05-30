@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        @@include('include/header.html')
+        <!-- //header -->
+
+        <!-- container -->
+        <div id="container" class="tabBg01">
+            <!-- content -->
+            <div id="content">
+                <!-- tabContWrap : 일반정보/상세정보 탭 -->
+                <div class="tabContWrap type01">
+                    <!-- tabNav -->
+                    <div class="tabNav">
+                        <!-- tabList -->
+                        <ul class="tabList">
+                            <li class="common active">
+                                <a href="#">일반정보</a>
+                            </li>
+                            <li class="more">
+                                <a href="#">상세정보</a>
+                            </li>
+                        </ul>
+                        <!-- //tabList -->
+                    </div>
+                    <!-- //tabNav -->
+
+                    <!-- tabCont : 일반정보 상세정보탭 -->
+                    <div class="tabCont tab01 active">
+                        <!-- flexContainer -->
+                        <div class="flexContainer">
+                            <!-- leftArea -->
+                            <div class="leftArea">
+                                <!-- weatherArea -->
+                                <div class="weatherArea">
+                                    <!-- whiteBox -->
+                                    <div class="whiteBox">
+                                        <!-- inner -->
+                                        <div class="inner">
+
+                                            <!-- tabContWrap : 전국 저수율/밭가뭄 현황 탭 -->
+                                            <div class="tabContWrap type02">
+                                                <!-- tabNav -->
+                                                <div class="tabNav">
+                                                    <!-- tabList -->
+                                                    <ul class="tabList">
+                                                        <li class="active">
+                                                            <a href="#">전국 저수율 현황</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">전국 밭가뭄 현황</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- //tabList -->
+                                                </div>
+                                                <!-- //tabNav -->
+
+                                                <!-- tabCont : 전국 저수율/밭가뭄 현황 탭 -->
+                                                <div class="tabCont active">
+                                                    <div class="descArea">
+                                                        <div class="date">
+                                                            <span>2021-11-14 기준</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- table -->
+                                                    <div class="table type01">
+                                                        <table>
+                                                            <colgroup>
+                                                                <col style="width: 95px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">인천&middot;경기</th>
+                                                                    <th scope="col">강원</th>
+                                                                    <th scope="col">충북</th>
+                                                                    <th scope="col">충남</th>
+                                                                    <th scope="col">전북</th>
+                                                                    <th scope="col">전남</th>
+                                                                    <th scope="col">경북</th>
+                                                                    <th scope="col">경남</th>
+                                                                    <th scope="col">제주</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face normal"></i>
+                                                                            <span class="colorType blue">정상</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face attention"></i>
+                                                                            <span class="colorType green">관심</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face caution"></i>
+                                                                            <span class="colorType lightOrange">주의</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face guard"></i>
+                                                                            <span class="colorType orange">경계</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face serious"></i>
+                                                                            <span class="colorType lightRed">심각</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face normal"></i>
+                                                                            <span class="colorType blue">정상</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face attention"></i>
+                                                                            <span class="colorType green">관심</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face caution"></i>
+                                                                            <span class="colorType lightOrange">주의</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face guard"></i>
+                                                                            <span class="colorType orange">경계</span>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx01"></i>
+                                                                                <span class="hidden">맑음</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx02"></i>
+                                                                                <span class="hidden">흐림</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx03"></i>
+                                                                                <span class="hidden">구름조금</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx04"></i>
+                                                                                <span class="hidden">안개</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx05"></i>
+                                                                                <span class="hidden">비</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx06"></i>
+                                                                                <span class="hidden">흐리고 비</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx07"></i>
+                                                                                <span class="hidden">번개</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx08"></i>
+                                                                                <span class="hidden">눈</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx09"></i>
+                                                                                <span class="hidden">눈비</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!-- //table -->
+                                                </div>
+                                                <!-- //tabCont -->
+
+                                                <!-- tabCont -->
+                                                <div class="tabCont">
+                                                    <div class="descArea">
+                                                        <div class="infoTxt">
+                                                            <span>밭가뭄 정보 제공은 4월 말부터 10월 말까지 입니다.</span>
+                                                        </div>
+                                                        <div class="date">
+                                                            <span>2021-11-14 기준</span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- table -->
+                                                    <div class="table type01">
+                                                        <table>
+                                                            <colgroup>
+                                                                <col style="width: 95px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                                <col style="width: 80px;">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">인천&middot;경기</th>
+                                                                    <th scope="col">강원</th>
+                                                                    <th scope="col">충북</th>
+                                                                    <th scope="col">충남</th>
+                                                                    <th scope="col">전북</th>
+                                                                    <th scope="col">전남</th>
+                                                                    <th scope="col">경북</th>
+                                                                    <th scope="col">경남</th>
+                                                                    <th scope="col">제주</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face normal"></i>
+                                                                            <span class="colorType blue">정상</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face attention"></i>
+                                                                            <span class="colorType green">관심</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face caution"></i>
+                                                                            <span class="colorType lightOrange">주의</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face guard"></i>
+                                                                            <span class="colorType orange">경계</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face serious"></i>
+                                                                            <span class="colorType lightRed">심각</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face normal"></i>
+                                                                            <span class="colorType blue">정상</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face attention"></i>
+                                                                            <span class="colorType green">관심</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face caution"></i>
+                                                                            <span class="colorType lightOrange">주의</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="status">
+                                                                            <i class="ico face guard"></i>
+                                                                            <span class="colorType orange">경계</span>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx01"></i>
+                                                                                <span class="hidden">맑음</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx02"></i>
+                                                                                <span class="hidden">흐림</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx03"></i>
+                                                                                <span class="hidden">구름조금</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx04"></i>
+                                                                                <span class="hidden">안개</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx05"></i>
+                                                                                <span class="hidden">비</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx06"></i>
+                                                                                <span class="hidden">흐리고 비</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx07"></i>
+                                                                                <span class="hidden">번개</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx08"></i>
+                                                                                <span class="hidden">눈</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="flex jc">
+                                                                            <button type="button">
+                                                                                <i class="ico weather wx09"></i>
+                                                                                <span class="hidden">눈비</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <!-- //table -->
+                                                </div>
+                                                <!-- //tabCont -->
+                                            </div>
+                                            <!-- //tabContWrap -->
+                                        </div>
+                                        <!-- //inner -->
+                                    </div>
+                                    <!-- //whiteBox -->
+
+                                    <!-- whiteBox -->
+                                    <div class="whiteBox">
+                                        <!-- inner -->
+                                        <div class="inner">
+                                            <div class="titArea">
+                                                <div class="tit">
+                                                    <p>주간날씨정보 - 인천·경기</p>
+                                                </div>
+                                                <span class="date">2021-11-14 기준</span>
+                                            </div>
+
+                                            <div class="weeklyInfo" style="background-color: #ddd;">
+                                                날씨 영역
+                                            </div>
+
+                                        </div>
+                                        <!-- //inner -->
+                                    </div>
+                                    <!-- //whiteBox -->
+                                </div>
+                                <!-- //weatherArea -->
+
+                                <!-- noticeArea -->
+                                <div class="noticeArea">
+                                    <!-- row -->
+                                    <div class="row">
+                                        <!-- box -->
+                                        <div class="box">
+                                            <!-- inner -->
+                                            <div class="inner">
+                                                <div class="titArea">
+                                                    <div class="tit">
+                                                        <p>공지사항</p>
+                                                    </div>
+                                                    <div class="btnArea">
+                                                        <button type="button" class="btnMore">
+                                                            <span class="hidden">더보기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- noticeList -->
+                                                <div class="noticeList">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="flex ac sb">
+                                                                <a href="#">
+                                                                    <span>입시사정관 출신 데오럭스 장광원 대표대표</span>
+                                                                </a>
+                                                                <span class="date">2021-11-14</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="flex ac sb">
+                                                                <a href="#">
+                                                                    <span>[밥상 물가 '초비상'] 흉작ㆍ노동력ㆍ공공공공</span>
+                                                                </a>
+                                                                <span class="date">2021-11-14</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="flex ac sb">
+                                                                <a href="#">
+                                                                    <span>무심천 무단취수 단속 '안 하나 못 하나'</span>
+                                                                </a>
+                                                                <span class="date">2021-11-14</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- //noticeList -->
+                                            </div>
+                                            <!-- //inner -->
+                                        </div>
+                                        <!-- //box -->
+
+                                        <!-- box -->
+                                        <div class="box">
+                                            <!-- inner -->
+                                            <div class="inner">
+                                                <div class="titArea">
+                                                    <div class="tit">
+                                                        <p>가뭄뉴스</p>
+                                                    </div>
+                                                    <div class="btnArea">
+                                                        <button type="button" class="btnMore">
+                                                            <span class="hidden">더보기</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- noticeList -->
+                                                <div class="noticeList">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="flex ac sb">
+                                                                <a href="#">
+                                                                    <span>입시사정관 출신 데오럭스 장광원 대표대표</span>
+                                                                </a>
+                                                                <span class="date">2021-11-14</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="flex ac sb">
+                                                                <a href="#">
+                                                                    <span>[밥상 물가 '초비상'] 흉작ㆍ노동력ㆍ공공공공</span>
+                                                                </a>
+                                                                <span class="date">2021-11-14</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="flex ac sb">
+                                                                <a href="#">
+                                                                    <span>무심천 무단취수 단속 '안 하나 못 하나'</span>
+                                                                </a>
+                                                                <span class="date">2021-11-14</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- //noticeList -->
+                                            </div>
+                                            <!-- //inner -->
+                                        </div>
+                                        <!-- //box -->
+                                    </div>
+                                    <!-- //row -->
+                                    
+                                </div>
+                                <!-- //noticeArea -->
+                            </div>
+                            <!-- //col -->
+
+                            <!-- rightArea -->
+                            <div class="rightArea pos-r">
+                                <!-- shortArea -->
+                                <div class="shortArea">
+                                    <!-- head -->
+                                    <div class="head">
+                                        <div class="inner">
+                                            <p><strong class="colorType lightBlue">전문정보</strong>바로가기</p>
+                                        </div>
+                                    </div>
+                                    <!-- //head -->
+
+                                    <!-- cont -->
+                                    <div class="cont">
+                                        <!-- inner -->
+                                        <div class="inner">
+                                            <!-- row -->
+                                            <div class="row">
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort01">
+                                                        <span>가뭄예경보</span>
+                                                    </button>
+                                                </div>
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort02">
+                                                        <span>저수율-강수량현황</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- //row -->
+
+                                            <!-- row -->
+                                            <div class="row">
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort03">
+                                                        <span>강우캘린더</span>
+                                                    </button>
+                                                </div>
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort04">
+                                                        <span>강우통계</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- //row -->
+
+                                            <!-- row -->
+                                            <div class="row">
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort05">
+                                                        <span>밭토양수분현황</span>
+                                                    </button>
+                                                </div>
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort06">
+                                                        <span>가뭄스펙트럼</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- //row -->
+
+                                            <!-- row -->
+                                            <div class="row">
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort07">
+                                                        <span>지하수 수위 정보</span>
+                                                    </button>
+                                                </div>
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort08">
+                                                        <span>저수율예측</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- //row -->
+
+                                            <!-- row -->
+                                            <div class="row">
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort09">
+                                                        <span>저수율지도</span>
+                                                    </button>
+                                                </div>
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort10">
+                                                        <span>강우지도</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- //row -->
+
+                                            <!-- row -->
+                                            <div class="row">
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort11">
+                                                        <span>밭토양수분지도</span>
+                                                    </button>
+                                                </div>
+                                                <div class="box">
+                                                    <button type="button" class="btnRow btnShort12">
+                                                        <span>강우-가뭄지도</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- //row -->
+                                        </div>
+                                        <!-- //inner -->
+                                    </div>
+                                    <!-- //cont -->
+                                </div>
+                                <!-- //shortArea -->
+                            </div>
+                            <!-- //rightArea -->
+                            
+                        </div>
+                        <!-- //flexContainer -->
+                    </div>
+                    <!-- //tabCont -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont tab02">
+                        <div class="btnArea loc">
+                            <button type="button" class="btnDashBoard">
+                                <span>대시보드</span>
+                            </button>
+                        </div>
+
+                        <!-- flexContainer -->
+                        <div class="flexContainer col">
+
+                            <!-- nationWideArea -->
+                            <div class="nationWideArea">
+                                <!-- boxCont -->
+                                <div class="boxCont">
+                                    <!-- whiteBox -->
+                                    <div class="whiteBox">
+                                        <!-- inner -->
+                                        <div class="inner">
+                                            <div class="titArea">
+                                                <div class="tit">
+                                                    <p>전국 저수율 현황</p>
+                                                </div>
+                                                <div class="infoTxt">
+                                                    <span>지자체 통합 정보(공사 정보)</span>
+                                                </div>
+                                                <div class="date">
+                                                    <span>2021-11-14 기준</span>
+                                                </div>
+                                            </div>
+
+                                            <!-- table -->
+                                            <div class="table type01 bdGreen">
+                                                <table>
+                                                    <colgroup>
+                                                        <col style="width: 155px;">
+                                                        <col style="width: auto;">
+                                                        <col style="width: 155px;">
+                                                    </colgroup>
+                                                    
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">통합저수율(공사)</th>
+                                                            <th scope="col">통합평년저수율(공사)</th>
+                                                            <th scope="col">통합평년대비(공사)</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="colorTxt">
+                                                                    <span class="colorType greenType02">80.4%</span>
+                                                                    <span class="colorType lightBlue">(80.2%)</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="colorTxt">
+                                                                    <span class="colorType greenType02">68.7%</span>
+                                                                    <span class="colorType lightBlue">(68.4%)</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="colorTxt">
+                                                                    <span class="colorType greenType02">117.1%</span>
+                                                                    <span class="colorType lightBlue">(117.3%)</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- //table -->
+                                        </div>
+                                        <!-- //inner -->
+                                    </div>
+                                    <!-- //whiteBox -->
+
+                                    <!-- whiteBox -->
+                                    <div class="whiteBox">
+                                        <!-- inner -->
+                                        <div class="inner">
+                                            <div class="titArea">
+                                                <div class="tit">
+                                                    <p>전국 강수량 현황</p>
+                                                </div>
+                                                <div class="date">
+                                                    <span>2021-11-14 기준</span>
+                                                </div>
+                                            </div>
+    
+                                            <!-- table -->
+                                            <div class="table type01">
+                                                <table>
+                                                    <colgroup>
+                                                        <col style="width: 110px;">
+                                                        <col style="width: auto;">
+                                                        <col style="width: 90px;">
+                                                        <col style="width: 90px;">
+                                                        <col style="width: 90px;">
+                                                        <col style="width: 90px;">
+                                                    </colgroup>
+                                                    
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">전국 강수량</th>
+                                                            <th scope="col">평년 강수량</th>
+                                                            <th scope="col">평년 대비</th>
+                                                            <th scope="col">최근3일</th>
+                                                            <th scope="col">최근2일</th>
+                                                            <th scope="col">최근1일</th>
+                                                        </tr>
+                                                    </thead>
+    
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="colorTxt">
+                                                                    <span class="colorType lightBlue">1214.8 mm</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="colorTxt">
+                                                                    <span class="colorType lightBlue">1279.6 mm</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="colorTxt">
+                                                                    <span class="colorType lightBlue">94.9 %</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="colorTxt">
+                                                                    <span class="colorType lightBlue">0.0 mm</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="colorTxt">
+                                                                    <span class="colorType lightBlue">0.0 mm</span>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="colorTxt">
+                                                                    <span class="colorType lightBlue">0.0 mm</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- //table -->
+                                        </div>
+                                        <!-- //inner -->
+                                        
+                                    </div>
+                                    <!-- //whiteBox -->
+                                </div>
+                                <!-- //boxCont -->
+
+                                <!-- boxCont -->
+                                <div class="boxCont">   
+                                    <!-- whiteBox -->
+                                    <div class="whiteBox full">
+                                        <!-- inner -->
+                                        <div class="inner">
+                                            <div class="titArea">
+                                                <div class="tit">
+                                                    <p>전국 저수율(색상:평년대비)</p>
+                                                </div>
+                                                <div class="infoTxt">
+                                                    <span>*서울시에는 공사관리 저수지가 없습니다.</span>
+                                                </div>
+                                                <div class="date">
+                                                    <span>2021-11-14 기준</span>
+                                                </div>
+                                            </div>
+
+                                            <!-- graphArea -->
+                                            <div class="graphArea" style="height:194px; background-color: #ddd;">
+                                                그래프영역
+                                            </div>
+                                            <!-- //graphArea -->
+
+                                            <!-- bottomCont -->
+                                            <div class="bottomCont">
+                                                <!-- flex -->
+                                                <div class="flex ac sb">
+                                                    <!-- legendArea -->
+                                                    <div class="legendArea">
+                                                        <div class="legendInfo mark">
+                                                            <p>지자체 통합 저수율(%)</p>
+                                                        </div>
+                                                        <div class="legendInfo mark blue">
+                                                            <p>공사 저수율(%)</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- //legendArea -->
+
+                                                    <!-- tagList -->
+                                                    <div class="tagList">
+                                                        <span class="tag">관심</span>
+                                                        <span class="tag yellow">주의</span>
+                                                        <span class="tag orange">경계</span>
+                                                        <span class="tag red">심각</span>
+                                                    </div>
+                                                    <!-- //tagList -->
+                                                </div>
+                                                <!-- //flex -->
+                                                
+                                            </div>
+                                            <!-- //bottomCont -->
+                                        </div>
+                                        <!-- //inner -->
+                                    </div>
+                                    <!-- //whiteBox -->
+                                </div>
+                                <!-- //boxCont -->
+                            </div>
+                            <!-- //nationWideArea -->
+
+                        </div>
+                        <!-- //flexContainer -->
+                        
+                    </div>
+                    <!-- //tabCont -->
+                </div>
+                <!-- //tabContWrap -->
+           
+           </div> 
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+
+        <!-- footer -->
+        @@include('include/footer.html')
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

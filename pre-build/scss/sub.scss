@@ -1,0 +1,69 @@
+#wrap.sub{
+  #content{padding: 0 0 100px 0;}
+
+  .tabContWrap.type01{display: flex; flex-direction: column; align-items: center; margin-top: -36px;
+    >.tabNav{margin-bottom: 50px;
+      >.tabList li{padding: 0;
+        a{width: 140px;}
+      }
+    }
+  }
+
+  input[type="text"]{height: 46px; padding-left: 15px; font-family: 'Noto Sans';
+  border-radius: 5px; border: 1px solid #ddd; font-size: 16px; background-color: #fff;
+    &::placeholder{font-size: 16px; color: #999; font-family: 'Noto Sans';}
+  }
+
+  select{height: 46px; font-size: 16px; border: 1px solid #ddd;}
+
+  .searchArea{display: flex; justify-content: center; align-items: center;
+    .searchList{
+      +.searchList{margin-left: 10px;}
+    }
+    +.rowContainer{margin-top: 40px;}
+  }
+  
+  .btnSearch{width: 46px; height: 46px; border-radius: 5px; background: #15a0c7 url("../images/ico/ico-search.png")no-repeat center;}
+
+  .rowContainer{display: flex; align-items: center;
+    .boxCont{display: flex;
+      &.full{width: 100%;
+        .whiteBox{width: 100%; height: 370px; border: 1px solid #eee; border-top: 0;}
+      }
+    }
+
+    .whiteBox{width: 600px; height: 512px;border-radius: 0; box-shadow: inherit; border: 1px solid #eee;
+      .mapArea{position: relative; height: inherit;
+        .tabContWrap.type03{position: absolute; top: 20px; left: 20px;}
+        .statusList{position: absolute; top: 20px; right: 20px;}
+        .tagWrap{position: absolute; right: 20px; top: 355px;}
+        .mapDiv{
+          .mapImg{width: 526px; height: 402px; background: url("../images/sub/bg-map.png")no-repeat center;}
+        }
+      }
+      &:last-child{border-left: 0;}
+      &.col3{
+        .titArea{justify-content: inherit; align-items: inherit;}
+        .tit{margin-right: 30px;}
+        .date{margin-left:auto; display: flex; align-items: flex-end;}
+      }
+    }
+    &.col{flex-direction: column;}
+  }
+
+  .status{display: flex; align-items: center; flex-direction: column; font-size: 14px; font-family: 'Noto Sans Medium';}
+
+  .statusList{
+    ul{display: flex; flex-direction: column;}
+    li{width: 65px;height: 65px;text-align: center; border-radius: 50%; transition: .5s;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.22); 
+      .btnStatus{width: 100%; height: 100%; border-radius: 50%; font-size: 14px;
+      color: #666; font-family: 'Noto Sans Medium'; background-color: #fff;}
+      &.active{
+        .btnStatus{color: #fff; background-color: #666;}
+      }
+      +li{margin-top: 15px;}
+    }
+  }
+}
+
+

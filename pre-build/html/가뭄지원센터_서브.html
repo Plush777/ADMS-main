@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap" class="sub">
+        <!-- header -->
+        @@include('include/header.html')
+        <!-- //header -->
+
+        <!-- visualArea -->
+        <div class="visualArea">
+            <!-- visualInner -->
+            <div class="visualInner">
+                <!-- breadCrumb -->
+                <div class="breadCrumb">
+                    <ul>
+                        <li>
+                            <a href="#" class="home">
+                                <span class="hidden">홈</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">내지역정보</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //breadCrumb -->
+                <h3 class="tit">
+                    <strong>내 지역정보</strong>
+                </h3>
+            </div>
+            <!-- //visualInner -->
+        </div>
+        <!-- //visualArea -->
+
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <!-- tabContWrap -->
+                <div class="tabContWrap type01 sub">
+                    <!-- tabnav -->
+                    <div class="tabNav">
+                        <!-- tabList -->
+                        <ul class="tabList">
+                            <li>
+                                <a href="#" title="수도권">수도권</a>
+                            </li>
+                            <li class="active">
+                                <a href="#" title="강원도">강원도</a>
+                            </li>
+                            <li>
+                                <a href="#" title="충청도">충청도</a>
+                            </li>
+                            <li>
+                                <a href="#" title="전라도">전라도</a>
+                            </li>
+                            <li>
+                                <a href="#" title="경상도">경상도</a>
+                            </li>
+                            <li>
+                                <a href="#" title="제주도">제주도</a>
+                            </li>
+                        </ul>
+                        <!-- //tabList -->
+                    </div>
+                    <!-- //tabnav -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont">
+                        수도권
+                    </div>
+                    <!-- //tabCont -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont active">
+                        <!-- searchArea -->
+                        <div class="searchArea">
+                            <!-- searchList -->
+                            <div class="searchList">
+                                <select class="wd220">
+                                    <option>전국</option>
+                                </select>
+                            </div>
+                            <!-- //searchList -->
+                            <!-- searchList -->
+                            <div class="searchList">
+                                <select class="wd220">
+                                    <option>시/군</option>
+                                </select>
+                            </div>
+                            <!-- //searchList -->
+                            <!-- searchList -->
+                            <div class="searchList">
+                                <select class="wd220">
+                                    <option>시설</option>
+                                </select>
+                            </div>
+                            <!-- //searchList -->
+                            <!-- searchList -->
+                            <div class="searchList">
+                                <input type="text" class="wd220" placeholder="검색어 입력">
+                            </div>
+                            <!-- //searchList -->
+                            <!-- searchList -->
+                            <div class="searchList">
+                                <button type="button" class="btnSearch">
+                                    <span class="hidden">검색</span>
+                                </button>
+                            </div>
+                            <!-- //searchList -->
+                        </div>
+                        <!-- //searchArea -->
+
+                        <!-- rowContainer -->
+                        <div class="rowContainer col">
+                            <!-- boxCont -->
+                            <div class="boxCont">
+                                <!-- whiteBox -->
+                                <div class="whiteBox">
+                                    <!-- mapArea -->
+                                    <div class="mapArea">
+
+                                        <!-- tabContWrap -->
+                                        <div class="tabContWrap type03">
+                                            <!-- tabNav -->
+                                            <div class="tabNav">
+                                                <!-- tabList -->
+                                                <ul class="tabList">
+                                                    <li class="active">
+                                                        <a href="#" title="전국">전국</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" title="내위치">내위치</a>
+                                                    </li>
+                                                </ul>
+                                                <!-- //tabList -->
+                                            </div>
+                                            <!-- //tabNav -->
+
+                                            <!-- tabCont -->
+                                            <div class="tabCont active">
+                                                <!-- mapDiv -->
+                                                <div class="mapDiv">
+                                                    <div class="mapImg"></div>
+                                                </div>
+                                                <!-- //mapDiv -->
+                                            </div>
+                                            <!-- //tabCont -->
+
+                                            <!-- tabCont -->
+                                            <div class="tabCont">
+                                                내위치
+                                            </div>
+                                            <!-- //tabCont -->
+                                        </div>
+                                        <!-- //tabContWrap -->
+
+                                        <!-- statusList -->
+                                        <div class="statusList">
+                                            <ul>
+                                                <li class="active">
+                                                    <button type="button" class="btnStatus">
+                                                        <span>현재</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btnStatus">
+                                                        <span>1개월<br>전망</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btnStatus">
+                                                        <span>2개월<br>전망</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btnStatus">
+                                                        <span>3개월<br>전망</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //statusList -->
+
+                                        <!-- tagWrap -->
+                                        <div class="tagWrap">
+                                            <div class="tagList col">
+                                                <span class="tag white">정상</span>
+                                                <span class="tag">관심</span>
+                                                <span class="tag yellow">주의</span>
+                                                <span class="tag orange">경계</span>
+                                                <span class="tag red">심각</span>
+                                            </div>
+                                        </div>
+                                        <!-- //tagWrap -->
+                                    </div>
+                                    <!-- //mapArea -->
+                                </div>
+                                <!-- //whiteBox -->
+
+                                <!-- whiteBox -->
+                                <div class="whiteBox">
+                                    <!-- inner -->
+                                    <div class="inner">
+                                        <div class="titArea">
+                                            <div class="tit">
+                                                <p>강원도 - 춘천시</p>
+                                            </div>
+                                            <div class="infoTxt">
+                                                <span>분석에 의한 추정치 데이터로 참고하시기 바랍니다.</span>
+                                            </div>
+                                            <div class="date">
+                                                <span>2021-11-14 기준</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- table -->
+                                        <div class="table type01 row">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 135px;">
+                                                    <col style="width: 135px;">
+                                                    <col style="width: 135px;">
+                                                    <col style="width: 135px;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">저수율</th>
+                                                        <td colspan="3">
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">42%</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">평년</th>
+                                                        <td colspan="3">
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">69.3%</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">평년대비</th>
+                                                        <td colspan="3">
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">60.6%</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">가뭄상황</th>
+                                                        <td>
+                                                            <div class="status">
+                                                                <i class="ico face attention"></i>
+                                                                <span class="colorType green">관심</span>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">기상정보</th>
+                                                        <td>
+                                                            <button type="button">
+                                                                <i class="ico weather wxSample"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4" class="bgBlue">공급가능일수</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+
+                                        <!-- table -->
+                                        <div class="table type01 bdNone">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 135px;">
+                                                    <col style="width: 135px;">
+                                                    <col style="width: 135px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">무강우시</th>
+                                                        <th scope="col">평년 100%</th>
+                                                        <th scope="col">평년 50%</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">100일</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">250일</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">200일</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </div>
+                                    <!-- //inner -->
+                                </div>
+                                <!-- //whiteBox -->
+                            </div>
+                            <!-- //boxCont -->
+
+                            <!-- boxCont -->
+                            <div class="boxCont full">
+                                <!-- whiteBox -->
+                                <div class="whiteBox col3">
+                                    <!-- inner -->
+                                    <div class="inner">
+                                        <!-- titArea -->
+                                        <div class="titArea">
+                                            <div class="tit">
+                                                <p>강원도 저수율</p>
+                                            </div>
+                                            <div class="legendArea">
+                                                <div class="legendInfo type02">
+                                                   <p>평년</p> 
+                                                </div>
+                                                <div class="legendInfo type02 brown">
+                                                    <p>2021</p>
+                                                </div>
+                                            </div>
+                                            <div class="date">
+                                                <span>2021-11-14 기준</span>
+                                            </div>
+                                        </div>
+                                        <!-- //titArea -->
+                                        <div class="graphArea" style="height: 260px; background-color: #ddd;">
+                                            그래프 영역
+                                        </div>
+                                    </div>
+                                    <!-- //inner -->
+                                </div>
+                                <!-- //whiteBox -->
+                            </div>
+                            <!-- //boxCont -->
+                        </div>
+                        <!-- //rowContainer -->
+                    </div>
+                    <!-- //tabCont -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont">
+                        충청도
+                    </div>
+                    <!-- //tabCont -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont">
+                        전라도
+                    </div>
+                    <!-- //tabCont -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont">
+                        경상도
+                    </div>
+                    <!-- //tabCont -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont">
+                        제주도
+                    </div>
+                    <!-- //tabCont -->
+
+                </div>
+                <!-- //tabContWrap -->
+            </div> 
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+
+        <!-- footer -->
+        @@include('include/footer.html')
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

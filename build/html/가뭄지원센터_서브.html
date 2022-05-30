@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../lib/jquery-ui.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+    <title>ADMS 농업가뭄관리시스템</title>
+</head>
+<body>
+    <!-- wrap -->
+    <div id="wrap" class="sub">
+        <!-- header -->
+        <div id="header">
+    <!-- inner -->
+    <div class="inner">
+        <div class="flex ac">
+            <h1>
+                <a href="#" title="ADMS 농업가뭄관리시스템">
+                    <img src="../images/main/logo.png" alt="ADMS 농업가뭄관리시스템">
+                </a>
+            </h1>
+            <!-- gnb -->
+            <div class="gnb">
+                <div class="menuBg"></div>
+                <ul class="menu">
+                    <li>
+                        <a href="#" title="내지역정보">내지역정보</a>
+                        <!-- dep2 -->
+                        <div class="dep2 gray">
+                            <ul>
+                                <li>
+                                    <a href="#" title="저수율조회">저수율조회</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="시설현황">시설현황</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="접속기록">접속기록</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="강수량현황">강수량현황</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="강수량현황(AWS)">강수량현황(AWS)</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="서버로그">서버로그</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="배치로그">배치로그</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="저수율강수량정보">저수율강수량정보</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //dep2 -->
+                    </li>
+                    <li>
+                        <a href="#" title="가뭄알기">가뭄알기</a>
+                        <!-- dep2 -->
+                        <div class="dep2">
+                            <ul>
+                                <li>
+                                    <a href="#" title="가뭄의 정의">가뭄의 정의</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="가뭄예경보제도">가뭄예경보제도</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="물절약홍보교육">물절약홍보교육</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="물절약 교육">물절약 교육</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="관련사이트">관련사이트</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="농업재해보험">농업재해보험</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="농업재해보험안내">농업재해보험안내</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="농민행동요령">농민행동요령</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="가뭄예경보">가뭄예경보</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //dep2 -->
+                    </li>
+                    <li>
+                        <a href="#" title="농업가뭄정보">농업가뭄정보</a>
+                        <!-- dep2 -->
+                        <div class="dep2 gray">
+                            <ul>
+                                <li>
+                                    <a href="#" title="저수율-강수량 현황">저수율-강수량 현황</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="강우캘린더">강우캘린더</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="강우통계">강우통계</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="밭토양수분현황">밭토양수분현황</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="가뭄체감정보">가뭄체감정보</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="저수율현황">저수율현황</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="강수량현황">강수량현황</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="가뭄스펙트럼">가뭄스펙트럼</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="지하수 수위 정보">지하수 수위 정보</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //dep2 -->
+                    </li>
+                    <li>
+                        <a href="#" title="농업가뭄지도">농업가뭄지도</a>
+                        <!-- dep2 -->
+                        <div class="dep2">
+                            <ul>
+                                <li>
+                                    <a href="#" title="저수율 지도">저수율 지도</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="강우 지도">강우 지도</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="밭토양수분지도">밭토양수분지도</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //dep2 -->
+                    </li>
+                    <li>
+                        <a href="#" title="공간정보">공간정보</a>
+                        <!-- dep2 -->
+                        <div class="dep2 gray">
+                            <ul>
+                                <li>
+                                    <a href="#" title="시군구저수율현황(주보)">시군구저수율현황(주보)</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="시군저수율현황(일보)">시군저수율현황(일보)</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="가뭄대책사업현황">가뭄대책사업현황</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="가움대책사업소계">가움대책사업소계</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="가뭄대책사업관리">가뭄대책사업관리</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="가뭄대책사업입력">가뭄대책사업입력</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="가뭄피해관리정보">가뭄피해관리정보</a>
+                                </li>    
+                            </ul>
+                        </div>
+                        <!-- //dep2 -->
+                    </li>
+                    <li>
+                        <a href="#" title="통합현황">통합현황</a>
+                         <!-- dep2 -->
+                         <div class="dep2">
+                            <ul>
+                                <li>
+                                    <a href="#" title="사용자관리">사용자관리</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="메뉴관리">메뉴관리</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="가뭄체감정보SMS발송">가뭄체감정보SMS발송</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="자료입력">자료입력</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="수리차트">수리차트</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="수리차트(ALL)">수리차트(ALL)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //dep2 -->
+                    </li>
+                    <li>
+                        <a href="#" title="가뭄대책사업">가뭄대책사업</a>
+                        <!-- dep2 -->
+                        <div class="dep2 gray">
+                            <ul>
+                                <li>
+                                    <a href="#" title="저수율조회">저수율조회</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="시설현황">시설현황</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="접속기록">접속기록</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="강수량현황">강수량현황</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="강수량현황(AWS)">강수량현황(AWS)</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="서버로그">서버로그</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="배치로그">배치로그</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="저수율강수량정보">저수율강수량정보</a>
+                                </li>   
+                            </ul>
+                        </div>
+                        <!-- //dep2 -->
+                    </li>
+                    <li>
+                        <a href="#" title="게시판">게시판</a>
+                        <!-- dep2 -->
+                        <div class="dep2">
+                            <ul>
+                                <li>
+                                    <a href="#" title="공지사항">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="가뭄뉴스">가뭄뉴스</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="자료실">자료실</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //dep2 -->
+                    </li>
+                </ul>
+            </div>
+            <!-- //gnb -->
+
+            <!-- util -->
+            <div class="util">
+                <div class="loginArea">
+                    <a href="#" title="로그인" class="login">
+                        <span>로그인</span>
+                    </a>
+                </div>
+            </div>
+            <!-- //util -->
+        </div>
+    </div>
+    <!-- //inner -->
+
+    <!-- siteMapArea -->
+    <div class="siteMapArea">
+        <button type="button" class="btnSiteMap">
+            <span class="hidden">사이트맵</span>
+        </button>
+    </div>
+    <!-- //siteMapArea -->
+    
+    <!-- siteMap -->
+    <div class="siteMap">
+        
+        <div class="visualArea">
+           
+            <div class="visualInner">
+                
+                <div class="breadCrumb">
+                    <ul>
+                        <li>
+                            <a href="#" class="home">
+                                <span class="hidden">홈</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">사이트맵</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <h3 class="tit">
+                    <strong>사이트맵</strong>
+                </h3>
+            </div>
+           
+        </div>
+      
+
+        
+        <div class="siteMapList">
+           
+            <div class="listInner">
+                
+                <ul class="siteMapMenu">
+                    <li>
+                        <a href="#" title="내지역정보">내지역정보</a>
+                        <ul>
+                            <li>
+                                <a href="#" title="저수율조회">저수율조회</a>
+                            </li>
+                            <li>
+                                <a href="#" title="시설현황">시설현황</a>
+                            </li>
+                            <li>
+                                <a href="#" title="접속기록">접속기록</a>
+                            </li>
+                            <li>
+                                <a href="#" title="강수량현황">강수량현황</a>
+                            </li>
+                            <li>
+                                <a href="#" title="강수량현황(AWS)">강수량현황(AWS)</a>
+                            </li>
+                            <li>
+                                <a href="#" title="서버로그">서버로그</a>
+                            </li>
+                            <li>
+                                <a href="#" title="배치로그">배치로그</a>
+                            </li>
+                            <li>
+                                <a href="#" title="저수율강수량정보">저수율강수량정보</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+
+               
+                <ul class="siteMapMenu">
+                    <li>
+                        <a href="#" title="가뭄알기">가뭄알기</a>
+                        <ul>
+                            <li>
+                                <a href="#" title="가뭄의 정의">가뭄의 정의</a>
+                            </li>
+                            <li>
+                                <a href="#" title="가뭄예경보제도">가뭄예경보제도</a>
+                            </li>
+                            <li>
+                                <a href="#" title="물절약홍보교육">물절약홍보교육</a>
+                            </li>
+                            <li>
+                                <a href="#" title="물절약 교육">물절약 교육</a>
+                            </li>
+                            <li>
+                                <a href="#" title="관련사이트">관련사이트</a>
+                            </li>
+                            <li>
+                                <a href="#" title="농업재해보험">농업재해보험</a>
+                            </li>
+                            <li>
+                                <a href="#" title="농업재해보험안내">농업재해보험안내</a>
+                            </li>
+                            <li>
+                                <a href="#" title="농민행동요령">농민행동요령</a>
+                            </li>
+                            <li>
+                                <a href="#" title="가뭄예경보">가뭄예경보</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+
+               
+                <ul class="siteMapMenu">
+                    <li>
+                        <a href="#" title="농업가뭄정보">농업가뭄정보</a>
+                        <ul>
+                            <li>
+                                <a href="#" title="저수율&middot;강수량 현황">저수율&middot;강수량 현황</a>
+                            </li>
+                            <li>
+                                <a href="#" title="강우캘린더">강우캘린더</a>
+                            </li>
+                            <li>
+                                <a href="#" title="강우통계">강우통계</a>
+                            </li>
+                            <li>
+                                <a href="#" title="밭토양수분현황">밭토양수분현황</a>
+                            </li>
+                            <li>
+                                <a href="#" title="가뭄체감정보">가뭄체감정보</a>
+                            </li>
+                            <li>
+                                <a href="#" title="저수율현황">저수율현황</a>
+                            </li>
+                            <li>
+                                <a href="#" title="강수량현황">강수량현황</a>
+                            </li>
+                            <li>
+                                <a href="#" title="가뭄스펙트럼">가뭄스펙트럼</a>
+                            </li>
+                            <li>
+                                <a href="#" title="지하수 수위 정보">지하수 수위 정보</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+
+                
+                <ul class="siteMapMenu">
+                    <li>
+                        <a href="#" title="농업가뭄지도">농엄가뭄지도</a>
+                        <ul>
+                            <li>
+                                <a href="#" title="저수율 지도">저수율 지도</a>
+                            </li>
+                            <li>
+                                <a href="#" title="강우 지도">강우 지도</a>
+                            </li>
+                            <li>
+                                <a href="#" title="밭토양수분지도">밭통양수분지도</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+
+              
+                <ul class="siteMapMenu mt70">
+                    <li>
+                        <a href="#" title="공간정보">공간정보</a>
+                        <ul>
+                            <li>
+                                <a href="#" title="시간저수율현황(주보)">시간저수율현황(주보)</a>
+                            </li>
+                            <li>
+                                <a href="#" title="시군저수율현황(일보)">시군저수율현황(일보)</a>
+                            </li>
+                            <li>
+                                <a href="#" title="시군저수율입력">시군저수율입력</a>
+                            </li>
+                            <li>
+                                <a href="#" title="가뭄대책사업현황">가뭄대책사업현황</a>
+                            </li>
+                            <li>
+                                <a href="#" title="가뭄대책사업소계">가뭄대책사업소계</a>
+                            </li>
+                            <li>
+                                <a href="#" title="가뭄대책사업관리">가뭄대책사업관리</a>
+                            </li>
+                            <li>
+                                <a href="#" title="가뭄대책사업입력">가뭄대책사업입력</a>
+                            </li>
+                            <li>
+                                <a href="#" title="가뭄피해관리정보">가뭄피해관리정보</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                
+               
+                <ul class="siteMapMenu mt70">
+                    <li>
+                        <a href="#" title="통합현황">통합현황</a>
+                        <ul>
+                            <li>
+                                <a href="#" title="사용자관리">사용자관리</a>
+                            </li>
+                            <li>
+                                <a href="#" title="메뉴관리">메뉴관리</a>
+                            </li>
+                            <li>
+                                <a href="#" title="가뭄체감정보SMS발송">가뭄체감정보SMS발송</a>
+                            </li>
+                            <li>
+                                <a href="#" title="자료입력">자료입력</a>
+                            </li>
+                            <li>
+                                <a href="#" title="수리차트">수리차트</a>
+                            </li>
+                            <li>
+                                <a href="#" title="수리차트(ALL)">수리차트(ALL)</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+               
+                <ul class="siteMapMenu mt70">
+                    <li>
+                        <a href="#" title="가뭄대책사업">가뭄대책사업</a>
+                        <ul>
+                            <li>
+                                <a href="#" title="저수율조회">저수율조회</a>
+                            </li>
+                            <li>
+                                <a href="#" title="시설현황">시설현황</a>
+                            </li>
+                            <li>
+                                <a href="#" title="접속기록">접속기록</a>
+                            </li>
+                            <li>
+                                <a href="#" title="강수량현황">강수량현황</a>
+                            </li>
+                            <li>
+                                <a href="#" title="강수량현황(AWS)">강수량현황(AWS)</a>
+                            </li>
+                            <li>
+                                <a href="#" title="서버로그">서버로그</a>
+                            </li>
+                            <li>
+                                <a href="#" title="배치로그">배치로그</a>
+                            </li>
+                            <li>
+                                <a href="#" title="저수율강수량정보">저수율강수량정보</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+              
+
+               
+                <ul class="siteMapMenu mt70">
+                    <li>
+                        <a href="#" title="게시판">게시판</a>
+                        <ul>
+                            <li>
+                                <a href="#" title="공지사항">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#" title="가뭄뉴스">가뭄뉴스</a>
+                            </li>
+                            <li>
+                                <a href="#" title="자료실">자료실</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            
+        </div>
+       
+    </div>
+    <!-- //siteMap -->
+</div>
+        <!-- //header -->
+
+        <!-- visualArea -->
+        <div class="visualArea">
+            <!-- visualInner -->
+            <div class="visualInner">
+                <!-- breadCrumb -->
+                <div class="breadCrumb">
+                    <ul>
+                        <li>
+                            <a href="#" class="home">
+                                <span class="hidden">홈</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">내지역정보</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //breadCrumb -->
+                <h3 class="tit">
+                    <strong>내 지역정보</strong>
+                </h3>
+            </div>
+            <!-- //visualInner -->
+        </div>
+        <!-- //visualArea -->
+
+        <!-- container -->
+        <div id="container">
+            <!-- content -->
+            <div id="content">
+                <!-- tabContWrap -->
+                <div class="tabContWrap type01 sub">
+                    <!-- tabnav -->
+                    <div class="tabNav">
+                        <!-- tabList -->
+                        <ul class="tabList">
+                            <li>
+                                <a href="#" title="수도권">수도권</a>
+                            </li>
+                            <li class="active">
+                                <a href="#" title="강원도">강원도</a>
+                            </li>
+                            <li>
+                                <a href="#" title="충청도">충청도</a>
+                            </li>
+                            <li>
+                                <a href="#" title="전라도">전라도</a>
+                            </li>
+                            <li>
+                                <a href="#" title="경상도">경상도</a>
+                            </li>
+                            <li>
+                                <a href="#" title="제주도">제주도</a>
+                            </li>
+                        </ul>
+                        <!-- //tabList -->
+                    </div>
+                    <!-- //tabnav -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont">
+                        수도권
+                    </div>
+                    <!-- //tabCont -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont active">
+                        <!-- searchArea -->
+                        <div class="searchArea">
+                            <!-- searchList -->
+                            <div class="searchList">
+                                <select class="wd220">
+                                    <option>전국</option>
+                                </select>
+                            </div>
+                            <!-- //searchList -->
+                            <!-- searchList -->
+                            <div class="searchList">
+                                <select class="wd220">
+                                    <option>시/군</option>
+                                </select>
+                            </div>
+                            <!-- //searchList -->
+                            <!-- searchList -->
+                            <div class="searchList">
+                                <select class="wd220">
+                                    <option>시설</option>
+                                </select>
+                            </div>
+                            <!-- //searchList -->
+                            <!-- searchList -->
+                            <div class="searchList">
+                                <input type="text" class="wd220" placeholder="검색어 입력">
+                            </div>
+                            <!-- //searchList -->
+                            <!-- searchList -->
+                            <div class="searchList">
+                                <button type="button" class="btnSearch">
+                                    <span class="hidden">검색</span>
+                                </button>
+                            </div>
+                            <!-- //searchList -->
+                        </div>
+                        <!-- //searchArea -->
+
+                        <!-- rowContainer -->
+                        <div class="rowContainer col">
+                            <!-- boxCont -->
+                            <div class="boxCont">
+                                <!-- whiteBox -->
+                                <div class="whiteBox">
+                                    <!-- mapArea -->
+                                    <div class="mapArea">
+
+                                        <!-- tabContWrap -->
+                                        <div class="tabContWrap type03">
+                                            <!-- tabNav -->
+                                            <div class="tabNav">
+                                                <!-- tabList -->
+                                                <ul class="tabList">
+                                                    <li class="active">
+                                                        <a href="#" title="전국">전국</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" title="내위치">내위치</a>
+                                                    </li>
+                                                </ul>
+                                                <!-- //tabList -->
+                                            </div>
+                                            <!-- //tabNav -->
+
+                                            <!-- tabCont -->
+                                            <div class="tabCont active">
+                                                <!-- mapDiv -->
+                                                <div class="mapDiv">
+                                                    <div class="mapImg"></div>
+                                                </div>
+                                                <!-- //mapDiv -->
+                                            </div>
+                                            <!-- //tabCont -->
+
+                                            <!-- tabCont -->
+                                            <div class="tabCont">
+                                                내위치
+                                            </div>
+                                            <!-- //tabCont -->
+                                        </div>
+                                        <!-- //tabContWrap -->
+
+                                        <!-- statusList -->
+                                        <div class="statusList">
+                                            <ul>
+                                                <li class="active">
+                                                    <button type="button" class="btnStatus">
+                                                        <span>현재</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btnStatus">
+                                                        <span>1개월<br>전망</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btnStatus">
+                                                        <span>2개월<br>전망</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="btnStatus">
+                                                        <span>3개월<br>전망</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //statusList -->
+
+                                        <!-- tagWrap -->
+                                        <div class="tagWrap">
+                                            <div class="tagList col">
+                                                <span class="tag white">정상</span>
+                                                <span class="tag">관심</span>
+                                                <span class="tag yellow">주의</span>
+                                                <span class="tag orange">경계</span>
+                                                <span class="tag red">심각</span>
+                                            </div>
+                                        </div>
+                                        <!-- //tagWrap -->
+                                    </div>
+                                    <!-- //mapArea -->
+                                </div>
+                                <!-- //whiteBox -->
+
+                                <!-- whiteBox -->
+                                <div class="whiteBox">
+                                    <!-- inner -->
+                                    <div class="inner">
+                                        <div class="titArea">
+                                            <div class="tit">
+                                                <p>강원도 - 춘천시</p>
+                                            </div>
+                                            <div class="infoTxt">
+                                                <span>분석에 의한 추정치 데이터로 참고하시기 바랍니다.</span>
+                                            </div>
+                                            <div class="date">
+                                                <span>2021-11-14 기준</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- table -->
+                                        <div class="table type01 row">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 135px;">
+                                                    <col style="width: 135px;">
+                                                    <col style="width: 135px;">
+                                                    <col style="width: 135px;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">저수율</th>
+                                                        <td colspan="3">
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">42%</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">평년</th>
+                                                        <td colspan="3">
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">69.3%</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">평년대비</th>
+                                                        <td colspan="3">
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">60.6%</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">가뭄상황</th>
+                                                        <td>
+                                                            <div class="status">
+                                                                <i class="ico face attention"></i>
+                                                                <span class="colorType green">관심</span>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">기상정보</th>
+                                                        <td>
+                                                            <button type="button">
+                                                                <i class="ico weather wxSample"></i>
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4" class="bgBlue">공급가능일수</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+
+                                        <!-- table -->
+                                        <div class="table type01 bdNone">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 135px;">
+                                                    <col style="width: 135px;">
+                                                    <col style="width: 135px;">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">무강우시</th>
+                                                        <th scope="col">평년 100%</th>
+                                                        <th scope="col">평년 50%</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">100일</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">250일</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="colorTxt">
+                                                                <span class="colorType lightBlue">200일</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- //table -->
+                                    </div>
+                                    <!-- //inner -->
+                                </div>
+                                <!-- //whiteBox -->
+                            </div>
+                            <!-- //boxCont -->
+
+                            <!-- boxCont -->
+                            <div class="boxCont full">
+                                <!-- whiteBox -->
+                                <div class="whiteBox col3">
+                                    <!-- inner -->
+                                    <div class="inner">
+                                        <!-- titArea -->
+                                        <div class="titArea">
+                                            <div class="tit">
+                                                <p>강원도 저수율</p>
+                                            </div>
+                                            <div class="legendArea">
+                                                <div class="legendInfo type02">
+                                                   <p>평년</p> 
+                                                </div>
+                                                <div class="legendInfo type02 brown">
+                                                    <p>2021</p>
+                                                </div>
+                                            </div>
+                                            <div class="date">
+                                                <span>2021-11-14 기준</span>
+                                            </div>
+                                        </div>
+                                        <!-- //titArea -->
+                                        <div class="graphArea" style="height: 260px; background-color: #ddd;">
+                                            그래프 영역
+                                        </div>
+                                    </div>
+                                    <!-- //inner -->
+                                </div>
+                                <!-- //whiteBox -->
+                            </div>
+                            <!-- //boxCont -->
+                        </div>
+                        <!-- //rowContainer -->
+                    </div>
+                    <!-- //tabCont -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont">
+                        충청도
+                    </div>
+                    <!-- //tabCont -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont">
+                        전라도
+                    </div>
+                    <!-- //tabCont -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont">
+                        경상도
+                    </div>
+                    <!-- //tabCont -->
+
+                    <!-- tabCont -->
+                    <div class="tabCont">
+                        제주도
+                    </div>
+                    <!-- //tabCont -->
+
+                </div>
+                <!-- //tabContWrap -->
+            </div> 
+            <!-- //content -->
+        </div>
+        <!-- //container -->
+
+        <!-- footer -->
+        <div id="footer">
+    <!-- inner -->
+    <div class="inner">
+        <!-- infoArea -->
+        <div class="infoArea">
+            <div class="flex column">
+                <p>세종특별자치시 한누리대로 193, 302호(나성동,참미르빌딩) 수자원기획처 통합물관리지원단. (우)30130</p>
+                <p>Copyright © 2017 농업가뭄센터. All Rights Reserved</p>
+            </div>
+            <select class="mainSelect">
+                <option>관련사이트</option>
+            </select>
+        </div>
+        <!-- //infoArea -->
+        <!-- logoArea -->
+        <div class="logoArea">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/main/footer-logo01.png" alt="농촌진흥청">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/main/footer-logo02.png" alt="농림축산식품부">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/main/footer-logo03.png" alt="Kr ADMS">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/main/footer-logo04.png" alt="한국농어촌공사">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- //logoArea -->
+    </div>
+    <!-- //inner -->
+</div>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
